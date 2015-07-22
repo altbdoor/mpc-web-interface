@@ -1,6 +1,8 @@
 # mpc-web-interface
 A very simple MPC Web interface for playback controls.
 
+![Screenshot](https://github.com/altbdoor/mpc-web-interface/raw/master/img/capture.jpg)
+
 - Play/Pause
 - Small and medium jump seeks
 - Skip forward/backward
