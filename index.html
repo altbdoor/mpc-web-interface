@@ -1,0 +1,68 @@
+<!--
+	default path: ./webroot
+-->
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MPC-HC</title>
+	<link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+	<div class="container">
+		<p id="status-filename" class="text-center">
+			<span>&nbsp;</span>
+		</p>
+		
+		<div class="row">
+			<div class="col-sm-6">
+				<button class="btn-block btn-30" data-cmd="887">&#9654;</button>
+			</div>
+			<div class="col-sm-6">
+				<button class="btn-block btn-30 text-bold" data-cmd="888">| |</button>
+			</div>
+		</div>
+		
+		<div class="row text-bold">
+			<div class="col-sm-3">
+				<button class="btn-block btn-30" data-cmd="901">&lt;&lt;</button>
+			</div>
+			<div class="col-sm-3">
+				<button class="btn-block btn-30" data-cmd="899">&lt;</button>
+			</div>
+			<div class="col-sm-3">
+				<button class="btn-block btn-30" data-cmd="900">&gt;</button>
+			</div>
+			<div class="col-sm-3">
+				<button class="btn-block btn-30" data-cmd="902">&gt;&gt;</button>
+			</div>
+		</div>
+		
+		<div class="row text-bold">
+			<div class="col-sm-6">
+				<button class="btn-block btn-30 reload" data-cmd="921">|&lt;</button>
+			</div>
+			<div class="col-sm-6">
+				<button class="btn-block btn-30 reload" data-cmd="922">&gt;|</button>
+			</div>
+		</div>
+		
+		<p>
+			<button id="status-reload" class="btn-block">Reload</button>
+		</p>
+		
+		<p>
+			<button class="btn-block" data-cmd="831">Fullscreen</button>
+		</p>
+	</div>
+	
+	<script>
+		var config = {
+			action: '[commandpath]',
+			cmd: '[wmcname]'
+		};
+	</script>
+	<script src="static/script.js"></script>
+</body>
+</html>
